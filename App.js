@@ -33,7 +33,7 @@ export default class App extends React.Component {
 				case "*": operator = "*"; angka1 = hasil; angka2 = ""; break;
 				case "/": operator = "/"; angka1 = hasil; angka2 = ""; break;
 				default:
-				
+
 				arrayInput[i] == " " ? angka2 = "" : angka2 += String(arrayInput[i])
 
 				angka1 == "" ? angka1 = angka2 : hasil;
@@ -50,8 +50,8 @@ export default class App extends React.Component {
 			}
 
 		}
-		let respon = `${angka1} | ${angka2} | ${hasil}`;
-		return respon;
+
+		return hasil;
 	}
 
 	render() {
